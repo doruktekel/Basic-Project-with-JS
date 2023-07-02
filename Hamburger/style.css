@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border: none;
+  position: fixed;
+  background-color: purple;
+  top: 20px;
+  right: 20px;
+  color: azure;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+button.active {
+  transform: translateX(-97px);
+}
+nav {
+  background-color: purple;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+}
+nav.active {
+  transform: translateX(0);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  padding: 2rem 0;
+}
+a {
+  color: azure;
+  text-decoration: none;
+}
