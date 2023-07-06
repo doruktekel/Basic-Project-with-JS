@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-card {
+  width: 180px;
+  margin: 0 1rem;
+  background-color: white;
+  text-align: center;
+  border-radius: 2rem;
+  border-style: none;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: all 5ms ease-in;
+  /* overflow: hidden; */
+}
+.main-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.main-card li {
+  list-style: none;
+  font-size: large;
+}
+h2 {
+  padding: 0.3rem 0;
+  margin: 0 1rem 0;
+}
+button {
+  margin: 1rem 0 1rem 0;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+}
+.card-header {
+  height: 3.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 0% 100%);
+  color: white;
+  letter-spacing: 1px;
+}
+.basic-card-header,
+.basic-button {
+  background: linear-gradient(
+    to right,
+    #01f7ed,
+    #00edd5,
+    #00e3bc,
+    #00d9a1,
+    #07ce85
+  );
+}
+.standart-card-header,
+.standart-button {
+  background-image: linear-gradient(
+    to right,
+    #ba01bf,
+    #bf00ab,
+    #c00099,
+    #bf0088,
+    #bc0079
+  );
+}
+.premium-card-header,
+.premium-button {
+  background-image: linear-gradient(
+    to right,
+    #f09503,
+    #f28800,
+    #f37900,
+    #f46a00,
+    #f45908
+  );
+}
