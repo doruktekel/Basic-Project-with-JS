@@ -5,7 +5,6 @@ let color;
 function randomColor() {
   color = "#";
   let hexcode = "0123456789ABCDEF";
-
   for (let index = 0; index < 6; index++) {
     color = color + hexcode[Math.floor(Math.random() * 16)];
   }
